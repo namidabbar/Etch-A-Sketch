@@ -11,6 +11,10 @@ container.appendChild(rows)
     divs = document.createElement('div');
     divs.classList.add('divs');
     divs.textContent = ' ';
+    divs.addEventListener('mouseenter', function (e) {
+        e.target.style.background = 'blue';
+      });
     rows.appendChild(divs);
     }
 }
+
