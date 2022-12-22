@@ -1,16 +1,30 @@
-div{
+.container{
     background-color: red;
     color: blue;
     display: flex;
-    width: 960px; 
-    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    height: 600px;
 }
 
 
 .divs{
     background-color: green;
     border-color: black;
-    width: 60px;
+    border-style: solid;
+    border-width: 2px;
     display: flex;
-   
+    
+    flex: 1;
+    margin:0;
+    padding:0;
+    gap:0;
+}
+
+.rows{
+    display: flex;
+    flex-direction: row;
+    margin:0;
+    padding:0;
+    gap:0;
 }
