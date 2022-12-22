@@ -11,10 +11,10 @@ container.appendChild(rows)
     divs = document.createElement('div');
     divs.classList.add('divs');
     divs.textContent = ' ';
+    let randomColor = Math.floor(Math.random()*16777215).toString(16);
     divs.addEventListener('mouseenter', function (e) {
-        e.target.style.background = 'blue';
+        e.target.style.background = '#' + randomColor;
       });
     rows.appendChild(divs);
     }
 }
-
