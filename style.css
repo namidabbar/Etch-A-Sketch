@@ -1,0 +1,16 @@
+div{
+    background-color: red;
+    color: blue;
+    display: flex;
+    width: 960px; 
+    justify-content: center;
+}
+
+
+.divs{
+    background-color: green;
+    border-color: black;
+    width: 60px;
+    display: flex;
+   
+}
