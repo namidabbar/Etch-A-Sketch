@@ -10,7 +10,7 @@ container.appendChild(rows)
     for (let i=0; i<16; i++){
     divs = document.createElement('div');
     divs.classList.add('divs');
-    divs.textContent = `j` +`i`;
+    divs.textContent = ' ';
     rows.appendChild(divs);
     }
 }
