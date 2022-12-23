@@ -1,10 +1,12 @@
 #container{
-    background-color: red;
-    color: blue;
+    background-color: #f4acb7;
     width: 700px;
     display: flex;
     flex-direction: column;
     align-self: center;
+    heigth: 700px;
+    margin-bottom: 20px;
+    padding:10px;
 }
 
 
@@ -32,8 +34,21 @@
 body{
     display: flex;
     flex-direction: column;
+    margin: 5px;
 }
 h1{
     color: #192A51;
     align-self: center;
+}
+
+button{
+    width: 200px;
+    background-color: #b5838d;
+    border-radius: 5px;
+    align-self: center;
+    margin-bottom: 20px;
+    padding: 5px;
+    color: white;
+    font-size: 24px;
+    border-color: #967AA1;
 }
