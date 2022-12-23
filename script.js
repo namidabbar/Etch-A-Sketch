@@ -3,7 +3,7 @@ let rows;
 let divs;
 let squares=16;
 
-
+function loadGrid(squares){
 for (j=0; j<squares; j++){
 rows=document.createElement('div');
 rows.classList.add('rows');
@@ -19,11 +19,13 @@ container.appendChild(rows)
     rows.appendChild(divs);
     }
 }
+}
 
 const button =document.querySelector('button');
 button.addEventListener('click', promptFunction);
 
   function promptFunction() {
     squares=prompt("How many number of squares per side for the new grid would you like? 2-100");
+    loadGrid(squares);
     
   }
