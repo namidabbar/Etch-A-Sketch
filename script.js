@@ -18,3 +18,10 @@ container.appendChild(rows)
     rows.appendChild(divs);
     }
 }
+
+const button =document.querySelector('button');
+button.addEventListener('click', promptFunction);
+
+  function promptFunction() {
+    prompt("How many number of squares per side for the new grid would you like? 2-100");
+  }
