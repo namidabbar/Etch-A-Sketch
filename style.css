@@ -13,8 +13,8 @@
 .divs{
     background-color: #f5e6e8;
     border-color: #967AA1;
-    border-style: dashed;
-    border-width: 2px;
+    border-style: dotted;
+    border-width: 1px;
     display: flex;
     margin:0;
     padding:0;
