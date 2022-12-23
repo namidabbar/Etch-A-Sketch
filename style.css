@@ -1,12 +1,12 @@
 #container{
     background-color: #f4acb7;
-    width: 700px;
+    width: 500px;
     display: flex;
     flex-direction: column;
     align-self: center;
-    heigth: 700px;
     margin-bottom: 20px;
     padding:10px;
+    height: 500px;
 }
 
 
@@ -19,8 +19,7 @@
     margin:0;
     padding:0;
     gap:0;
-    height: 40px;
-    width: 40px;
+    flex: 1 1 auto;
 }
 
 .rows{
@@ -29,6 +28,7 @@
     margin:0;
     padding:0;
     gap:0;
+    flex: 1 1 auto;
 }
 
 body{
