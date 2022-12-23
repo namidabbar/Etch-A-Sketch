@@ -9,9 +9,9 @@
 
 
 .divs{
-    background-color: green;
-    border-color: black;
-    border-style: solid;
+    background-color: #f5e6e8;
+    border-color: #967AA1;
+    border-style: dashed;
     border-width: 2px;
     display: flex;
     margin:0;
@@ -32,4 +32,8 @@
 body{
     display: flex;
     flex-direction: column;
+}
+h1{
+    color: #192A51;
+    align-self: center;
 }
