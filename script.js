@@ -29,3 +29,5 @@ button.addEventListener('click', promptFunction);
     loadGrid(squares);
     
   }
+
+window.onload=loadGrid(16);
