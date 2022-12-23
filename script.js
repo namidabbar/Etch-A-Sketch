@@ -26,10 +26,27 @@ button.addEventListener('click', promptFunction);
 
   function promptFunction() {
     squares=prompt("How many number of squares per side for the new grid would you like? 2-100");
+    checkSquaresSize(squares);
     emptyContainerDiv();
     loadGrid(squares);
     
   }
+function checkSquaresSize(){
+    squares=parseInt(squares);
+  if (squares >100){
+    squares=prompt("Please input a number between 2 -100");
+    checkSquaresSize(squares);
+    }
+    else if (squares <2){
+        squares=prompt("Please input a number between 2 -100");
+        checkSquaresSize(squares);
+    }
+    else if (isNaN(squares)){
+        squares=16;
+        return;
+    }
+}
+
 
 function emptyContainerDiv(){
     while (container.firstChild){
