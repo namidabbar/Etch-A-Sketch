@@ -1,13 +1,14 @@
 const container = document.querySelector('#container');
 let rows;
 let divs;
+let squares=16;
 
 
-for (j=0; j<16; j++){
+for (j=0; j<squares; j++){
 rows=document.createElement('div');
 rows.classList.add('rows');
 container.appendChild(rows)
-    for (let i=0; i<16; i++){
+    for (let i=0; i<squares; i++){
     divs = document.createElement('div');
     divs.classList.add('divs');
     divs.textContent = ' ';
@@ -23,5 +24,6 @@ const button =document.querySelector('button');
 button.addEventListener('click', promptFunction);
 
   function promptFunction() {
-    prompt("How many number of squares per side for the new grid would you like? 2-100");
+    squares=prompt("How many number of squares per side for the new grid would you like? 2-100");
+    
   }
