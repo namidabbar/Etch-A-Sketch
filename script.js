@@ -26,8 +26,15 @@ button.addEventListener('click', promptFunction);
 
   function promptFunction() {
     squares=prompt("How many number of squares per side for the new grid would you like? 2-100");
+    emptyContainerDiv();
     loadGrid(squares);
     
   }
+
+function emptyContainerDiv(){
+    while (container.firstChild){
+        container.removeChild(container.firstChild)
+    }
+}
 
 window.onload=loadGrid(16);
